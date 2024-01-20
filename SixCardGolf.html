@@ -9,8 +9,14 @@
 </head>
     <body>
         <header class = "nav">
+            <div class = "logo">
+                <img src = "Assets/SpadeIcon.png">
+                <h1>Six Card Golf</h1>
+            </div>
             <div class = "navbar">
-
+                <a>How to play</a>
+                <a>Github</a>
+                <a>NwHacks</a>
             </div>
         </header>
         <div class = "gameSpace">
@@ -18,9 +24,31 @@
                 <div class = "cardSpace1">
                     <img onClick = "card1Click()" src = "Assets/EmptyCard.png">
                 </div>
+                <div class = "cardSpace2">
+                    <img onClick = "card2Click()" src = "Assets/EmptyCard.png">
+                </div>
+                <div class = "cardSpace3">
+                    <img onClick = "card3Click()" src = "Assets/EmptyCard.png">
+                </div>
+                <break class = "break"></break>
+                <div class = "cardSpace4">
+                    <img onClick = "card4Click()" src = "Assets/EmptyCard.png">
+                </div>
+                <div class = "cardSpace5">
+                    <img onClick = "card5Click()" src = "Assets/EmptyCard.png">
+                </div>
+                <div class = "cardSpace6">
+                    <img onClick = "card6Click()" src = "Assets/EmptyCard.png">
+                </div>
             </div>
             <div class = "pileSpace">
-
+                <div class = "drawPile">
+                    <img onClick = "drawPileClick()" src = "Assets/EmptyCard.png">
+                </div>
+                <div class = "discardPile">
+                    <img onClick = "discardPileClick()" src = "Assets/EmptyCard.png">
+                </div>
+                <p class = "score">Current score: 0</p>
             </div>
         </div>
     </body>
