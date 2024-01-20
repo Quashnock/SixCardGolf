@@ -6,6 +6,8 @@
 body{
     min-height: 100vh;
     background-color: #424549;
+    min-width:650px;        /* Suppose you want minimum width of 1000px */
+    width: auto !important;  /* Firefox will set width as auto */
 }
 .nav{
     width: 100%;
