@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="SixCardGolf.css">
+    <script src = "SixCardGolf.js"></script>
+    <title>SixCardGolf</title>
+</head>
+    <body>
+        <header class = "nav">
+            <div class = "logo">
+                <img src = "Assets/SpadeIcon.png">
+                <h1>Six Card Golf</h1>
+            </div>
+            <div class = "navbar">
+                <a href="https://bicyclecards.com/how-to-play/six-card-golf" target='_blank'>How to play</a>
+                <a href="https://github.com/Quashnock/SixCardGolf" target = '_blank'>Github</a>
+                <a href="https://nwhacks.io/" target = '_blank'>NwHacks</a>
+            </div>
+        </header>
+        <div class = "gameSpace">
+            <div class = "cardSpace">
+                <div class = "cardSpace1">
+                    <img onClick = "card1Click()" src = "Assets/EmptyCard.png">
+                </div>
+                <div class = "cardSpace2">
+                    <img onClick = "card2Click()" src = "Assets/EmptyCard.png">
+                </div>
+                <div class = "cardSpace3">
+                    <img onClick = "card3Click()" src = "Assets/EmptyCard.png">
+                </div>
+                <break class = "break"></break>
+                <div class = "cardSpace4">
+                    <img onClick = "card4Click()" src = "Assets/EmptyCard.png">
+                </div>
+                <div class = "cardSpace5">
+                    <img onClick = "card5Click()" src = "Assets/EmptyCard.png">
+                </div>
+                <div class = "cardSpace6">
+                    <img onClick = "card6Click()" src = "Assets/EmptyCard.png">
+                </div>
+            </div>
+            <div class = "pileSpace">
+                <div class = "drawPile">
+                    <img onClick = "drawPileClick()" src = "Assets/EmptyCard.png">
+                </div>
+                <div class = "discardPile">
+                    <img onClick = "discardPileClick()" src = "Assets/EmptyCard.png">
+                </div>
+                <div class = "helperSlide">
+                    <div class = "instructions">
+                        <p>Flip Over Two Cards</p>
+                    </div>
+                    <hr color = white>
+                    <div class = "score">
+                        <p>Current Score: 0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
