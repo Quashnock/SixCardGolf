@@ -37,6 +37,7 @@ localStorage.setItem('drawPilePickUp', 'N');
 localStorage.setItem('discardPilePickUp', 'N');
 localStorage.setItem('gameOver', 'N')
 
+
 function card1Click(){
     if (localStorage.getItem('gameOver') == 'N'){
         if (localStorage.getItem('card1Face') == 'Assets/EmptyCard.png' && parseInt(localStorage.getItem('pregameFlips')) < 2){
@@ -277,8 +278,13 @@ function checkPoints(){
         container = document.querySelector('.instructions');
         newElement = document.createElement('p');
         newElement.textContent = 'GAME OVER'
+        anotherElement = document.createElement('a');
+        anotherElement.textContent = 'Try Again?';
+        anotherElement.setAttribute('href', 'https://quashnock.github.io/SixCardGolf/SixCardGolf.html')
+        anotherElement.setAttribute('draggable', 'false')
         container.innerHTML = '';
         container.appendChild(newElement);
+        container.appendChild(anotherElement);
         for (let i = 1; i<=6; i++){
             if (localStorage.getItem('card' + i + 'Face') == 'Assets/EmptyCard.png'){
                 emptyCardClick('.cardSpace' + i, 'card' + i + 'Face', 'card' + i + 'Points', 'card' + i + 'Click()');
