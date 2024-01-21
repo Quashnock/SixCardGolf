@@ -22,31 +22,37 @@
         <div class = "gameSpace">
             <div class = "cardSpace">
                 <div class = "cardSpace1">
-                    <img onClick = "card1Click()" src = "Assets/EmptyCard.png">
+                    <img draggable = "false" onClick = "card1Click()" src = "Assets/EmptyCard.png">
                 </div>
                 <div class = "cardSpace2">
-                    <img onClick = "card2Click()" src = "Assets/EmptyCard.png">
+                    <img draggable = "false" onClick = "card2Click()" src = "Assets/EmptyCard.png">
                 </div>
                 <div class = "cardSpace3">
-                    <img onClick = "card3Click()" src = "Assets/EmptyCard.png">
+                    <img draggable = "false" onClick = "card3Click()" src = "Assets/EmptyCard.png">
                 </div>
                 <break class = "break"></break>
                 <div class = "cardSpace4">
-                    <img onClick = "card4Click()" src = "Assets/EmptyCard.png">
+                    <img draggable = "false" onClick = "card4Click()" src = "Assets/EmptyCard.png">
                 </div>
                 <div class = "cardSpace5">
-                    <img onClick = "card5Click()" src = "Assets/EmptyCard.png">
+                    <img draggable = "false" onClick = "card5Click()" src = "Assets/EmptyCard.png">
                 </div>
                 <div class = "cardSpace6">
-                    <img onClick = "card6Click()" src = "Assets/EmptyCard.png">
+                    <img draggable = "false" onClick = "card6Click()" src = "Assets/EmptyCard.png">
                 </div>
             </div>
             <div class = "pileSpace">
-                <div class = "drawPile">
-                    <img onClick = "drawPileClick()" src = "Assets/EmptyCard.png">
+                <div class ="drawPileTotal">
+                    <div class = "drawPile">
+                        <img draggable = "false" onClick = "drawPileClick()" src = "Assets/EmptyCard.png">
+                    </div>
+                    <a>Draw</a>
                 </div>
-                <div class = "discardPile">
-                    <img onClick = "discardPileClick()" src = "Assets/EmptyCard.png">
+                <div class ="discardPileTotal">
+                    <div class = "discardPile">
+                        <img class = "pile" onClick = "discardPileClick()" src = "Assets/EmptyCard.png">
+                    </div>
+                    <a>Discard</a>
                 </div>
                 <div class = "helperSlide">
                     <div class = "instructions">
