@@ -6,7 +6,7 @@
 }
 body{
     height: 100%;
-    background-color: #424549;
+    background-color: #2f6127;
     min-width:650px;      
     width: auto !important; 
     width: 100%;
@@ -23,6 +23,16 @@ body{
     align-items: center;
     color: white;
     text-align: center;
+}
+.nav a{
+    margin: 10px;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav a:hover{
+    text-decoration: underline;
 }
 .logo {
     display: flex;
@@ -61,7 +71,7 @@ body{
     width: 30%;
     height: 100%;
     display: inline-block;
-    background-color: white;
+    background-color: #b13b3b;
     display: flex;
     flex-wrap: wrap;
     align-content: center;
@@ -74,8 +84,9 @@ body{
 .gameSpace img{
     width: 22vh;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;   
-    border-radius: 5px;
-    margin-bottom: 10px;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    border: black 1px solid;
 }
 .helperSlide{
     background-color: black;
