@@ -2,12 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow: hidden;
 }
 body{
-    min-height: 100vh;
+    height: 100%;
     background-color: #424549;
-    min-width:650px;        /* Suppose you want minimum width of 1000px */
-    width: auto !important;  /* Firefox will set width as auto */
+    min-width:650px;      
+    width: auto !important; 
+    width: 100%;
+    font-family: 'Playfair Display', serif;
 }
 .nav{
     width: 100%;
@@ -33,8 +36,8 @@ body{
 
 
 .nav img{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 10px;
     float: left;
 }
@@ -72,4 +75,20 @@ body{
     width: 22vh;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;   
     border-radius: 5px;
+    margin-bottom: 10px;
+}
+.helperSlide{
+    background-color: black;
+    width: 200px;
+    min-height: 100px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+    border-radius: 25px;
+    margin-top: 40px;
+}
+hr{
+    width: 80%;
 }

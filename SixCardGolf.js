@@ -23,110 +23,128 @@ localStorage.setItem('discardPileFace0', 'Assets/EmptyCard.png')
 localStorage.setItem('discardPilePoints0', 0)
 
 localStorage.setItem('pregameFlips', 0);
+localStorage.setItem('turns', 10)
 localStorage.setItem('discardPileHeight', 0)
 localStorage.setItem('drawPilePickUp', 'N');
-localStorage.setItem('discardPilePickUp', 'N')
+localStorage.setItem('discardPilePickUp', 'N');
+localStorage.setItem('gameOver', 'N')
 
 function card1Click(){
-    if (localStorage.getItem('card1Face') == 'Assets/EmptyCard.png' && parseInt(localStorage.getItem('pregameFlips')) < 2){
-        emptyCardClick('.cardSpace1', 'card1Face','card1Points','card1Click()');
-    }
-    else if(localStorage.getItem('drawPilePickUp') == 'Y'){
-        drawPilePlace('.cardSpace1', 'card1Face', 'card1Points','card1Click()');
-    }
-    else if(localStorage.getItem('discardPilePickUp') == 'Y'){
-        discardPilePlace('.cardSpace1', 'card1Face', 'card1Points','card1Click()');
-    }
+    if (localStorage.getItem('gameOver') == 'N'){
+        if (localStorage.getItem('card1Face') == 'Assets/EmptyCard.png' && parseInt(localStorage.getItem('pregameFlips')) < 2){
+            emptyCardClick('.cardSpace1', 'card1Face','card1Points','card1Click()');
+        }
+        else if(localStorage.getItem('drawPilePickUp') == 'Y'){
+            drawPilePlace('.cardSpace1', 'card1Face', 'card1Points','card1Click()');
+        }
+        else if(localStorage.getItem('discardPilePickUp') == 'Y'){
+            discardPilePlace('.cardSpace1', 'card1Face', 'card1Points','card1Click()');
+        }
+    }  
 }
 function card2Click(){
-    if (localStorage.getItem('card2Face') == 'Assets/EmptyCard.png' && parseInt(localStorage.getItem('pregameFlips')) < 2){
-        emptyCardClick('.cardSpace2', 'card2Face','card2Points','card2Click()');
-    }
-    else if(localStorage.getItem('drawPilePickUp') == 'Y'){
-        drawPilePlace('.cardSpace2', 'card2Face', 'card2Points','card2Click()');
-    }
-    else if(localStorage.getItem('discardPilePickUp') == 'Y'){
-        discardPilePlace('.cardSpace2', 'card2Face', 'card2Points','card2Click()');
+    if (localStorage.getItem('gameOver') == 'N'){
+        if (localStorage.getItem('card2Face') == 'Assets/EmptyCard.png' && parseInt(localStorage.getItem('pregameFlips')) < 2){
+            emptyCardClick('.cardSpace2', 'card2Face','card2Points','card2Click()');
+        }
+        else if(localStorage.getItem('drawPilePickUp') == 'Y'){
+            drawPilePlace('.cardSpace2', 'card2Face', 'card2Points','card2Click()');
+        }
+        else if(localStorage.getItem('discardPilePickUp') == 'Y'){
+            discardPilePlace('.cardSpace2', 'card2Face', 'card2Points','card2Click()');
+        }
     }
 }
 function card3Click(){
-    if (localStorage.getItem('card3Face') == 'Assets/EmptyCard.png' && parseInt(localStorage.getItem('pregameFlips')) < 2){
-        emptyCardClick('.cardSpace3', 'card3Face','card3Points','card3Click()');
-    }
-    else if(localStorage.getItem('drawPilePickUp') == 'Y'){
-        drawPilePlace('.cardSpace3', 'card3Face', 'card3Points','card3Click()');
-    }
-    else if(localStorage.getItem('discardPilePickUp') == 'Y'){
-        discardPilePlace('.cardSpace3', 'card3Face', 'card3Points','card3Click()');
+    if (localStorage.getItem('gameOver') == 'N'){
+        if (localStorage.getItem('card3Face') == 'Assets/EmptyCard.png' && parseInt(localStorage.getItem('pregameFlips')) < 2){
+            emptyCardClick('.cardSpace3', 'card3Face','card3Points','card3Click()');
+        }
+        else if(localStorage.getItem('drawPilePickUp') == 'Y'){
+            drawPilePlace('.cardSpace3', 'card3Face', 'card3Points','card3Click()');
+        }
+        else if(localStorage.getItem('discardPilePickUp') == 'Y'){
+            discardPilePlace('.cardSpace3', 'card3Face', 'card3Points','card3Click()');
+        }
     }
 }
 function card4Click(){
-    if (localStorage.getItem('card4Face') == 'Assets/EmptyCard.png' && parseInt(localStorage.getItem('pregameFlips')) < 2){
-        emptyCardClick('.cardSpace4', 'card4Face','card4Points','card4Click()');
-    }
-    else if(localStorage.getItem('drawPilePickUp') == 'Y'){
-        drawPilePlace('.cardSpace4', 'card4Face', 'card4Points','card4Click()');
-    }
-    else if(localStorage.getItem('discardPilePickUp') == 'Y'){
-        discardPilePlace('.cardSpace4', 'card4Face', 'card4Points','card4Click()');
+    if (localStorage.getItem('gameOver') == 'N'){
+        if (localStorage.getItem('card4Face') == 'Assets/EmptyCard.png' && parseInt(localStorage.getItem('pregameFlips')) < 2){
+            emptyCardClick('.cardSpace4', 'card4Face','card4Points','card4Click()');
+        }
+        else if(localStorage.getItem('drawPilePickUp') == 'Y'){
+            drawPilePlace('.cardSpace4', 'card4Face', 'card4Points','card4Click()');
+        }
+        else if(localStorage.getItem('discardPilePickUp') == 'Y'){
+            discardPilePlace('.cardSpace4', 'card4Face', 'card4Points','card4Click()');
+        }
     }
 }
 function card5Click(){
-    if (localStorage.getItem('card5Face') == 'Assets/EmptyCard.png' && parseInt(localStorage.getItem('pregameFlips')) < 2){
-        emptyCardClick('.cardSpace5', 'card5Face','card5Points','card5Click()');
-    }
-    else if(localStorage.getItem('drawPilePickUp') == 'Y'){
-        drawPilePlace('.cardSpace5', 'card5Face', 'card5Points','card5Click()');
-    }
-    else if(localStorage.getItem('discardPilePickUp') == 'Y'){
-        discardPilePlace('.cardSpace5', 'card5Face', 'card5Points','card5Click()');
+    if (localStorage.getItem('gameOver') == 'N'){
+        if (localStorage.getItem('card5Face') == 'Assets/EmptyCard.png' && parseInt(localStorage.getItem('pregameFlips')) < 2){
+            emptyCardClick('.cardSpace5', 'card5Face','card5Points','card5Click()');
+        }
+        else if(localStorage.getItem('drawPilePickUp') == 'Y'){
+            drawPilePlace('.cardSpace5', 'card5Face', 'card5Points','card5Click()');
+        }
+        else if(localStorage.getItem('discardPilePickUp') == 'Y'){
+            discardPilePlace('.cardSpace5', 'card5Face', 'card5Points','card5Click()');
+        }
     }
 }
 function card6Click(){
-    if (localStorage.getItem('card6Face') == 'Assets/EmptyCard.png' && parseInt(localStorage.getItem('pregameFlips')) < 2){
-        emptyCardClick('.cardSpace6', 'card6Face','card6Points','card6Click()');
-    }
-    else if(localStorage.getItem('drawPilePickUp') == 'Y'){
-        drawPilePlace('.cardSpace6', 'card6Face', 'card6Points','card6Click()');
-    }
-    else if(localStorage.getItem('discardPilePickUp') == 'Y'){
-        discardPilePlace('.cardSpace6', 'card6Face', 'card6Points','card6Click()');
+    if (localStorage.getItem('gameOver') == 'N'){
+        if (localStorage.getItem('card6Face') == 'Assets/EmptyCard.png' && parseInt(localStorage.getItem('pregameFlips')) < 2){
+            emptyCardClick('.cardSpace6', 'card6Face','card6Points','card6Click()');
+        }
+        else if(localStorage.getItem('drawPilePickUp') == 'Y'){
+            drawPilePlace('.cardSpace6', 'card6Face', 'card6Points','card6Click()');
+        }
+        else if(localStorage.getItem('discardPilePickUp') == 'Y'){
+            discardPilePlace('.cardSpace6', 'card6Face', 'card6Points','card6Click()');
+        }
     }
 }
 
 function drawPileClick(){
-    if (localStorage.getItem('drawPileFace') == 'Assets/EmptyCard.png' && localStorage.getItem('pregameFlips') >= 2 && localStorage.getItem('discardPilePickUp') == 'N'){
-        localStorage.setItem('drawPilePickUp', 'Y');
-        emptyCardClick('.drawPile', 'drawPileFace', 'drawPilePoints', 'drawPileClick()');
+    if (localStorage.getItem('gameOver') == 'N'){
+        if (localStorage.getItem('drawPileFace') == 'Assets/EmptyCard.png' && localStorage.getItem('pregameFlips') >= 2 && localStorage.getItem('discardPilePickUp') == 'N'){
+            localStorage.setItem('drawPilePickUp', 'Y');
+            emptyCardClick('.drawPile', 'drawPileFace', 'drawPilePoints', 'drawPileClick()');
+        }
     }
 }
 function discardPileClick(){
-    if (localStorage.getItem('drawPilePickUp') == 'Y'){
+    if (localStorage.getItem('gameOver') == 'N'){
+        if (localStorage.getItem('drawPilePickUp') == 'Y'){
 
-        localStorage.setItem('drawPilePickUp', 'N');
-        localStorage.setItem('discardPileHeight', (parseInt(localStorage.getItem('discardPileHeight')) + 1));
+            localStorage.setItem('drawPilePickUp', 'N');
+            localStorage.setItem('discardPileHeight', (parseInt(localStorage.getItem('discardPileHeight')) + 1));
 
-        let container = document.querySelector('.discardPile');
-        let newElement = document.createElement('img');
-        newElement.setAttribute('src', localStorage.getItem('drawPileFace'))
-        newElement.setAttribute('onClick', 'discardPileClick()');
-        container.innerHTML = '';
-        container.appendChild(newElement);
-        localStorage.setItem('discardPileFace' +  localStorage.getItem('discardPileHeight'), localStorage.getItem('drawPileFace'));
-        localStorage.setItem('discardPilePoints' + localStorage.getItem('discardPileHeight'), localStorage.getItem('drawPilePoints'));
+            let container = document.querySelector('.discardPile');
+            let newElement = document.createElement('img');
+            newElement.setAttribute('src', localStorage.getItem('drawPileFace'))
+            newElement.setAttribute('onClick', 'discardPileClick()');
+            container.innerHTML = '';
+            container.appendChild(newElement);
+            localStorage.setItem('discardPileFace' +  localStorage.getItem('discardPileHeight'), localStorage.getItem('drawPileFace'));
+            localStorage.setItem('discardPilePoints' + localStorage.getItem('discardPileHeight'), localStorage.getItem('drawPilePoints'));
 
-        container = document.querySelector('.drawPile');
-        newElement = document.createElement('img');
-        newElement.setAttribute('src', 'Assets/EmptyCard.png');
-        newElement.setAttribute('onClick', 'drawPileClick()');
-        container.innerHTML = '';
-        container.appendChild(newElement);
-        localStorage.setItem('drawPileFace', 'Assets/EmptyCard.png');
-        localStorage.setItem('drawPilePoints', 0);
-        checkPoints(); 
-    }
-    else if(localStorage.getItem('discardPileHeight') > 0 && localStorage.getItem('pregameFlips') >= 2){
-        localStorage.setItem('discardPilePickUp', 'Y');
+            container = document.querySelector('.drawPile');
+            newElement = document.createElement('img');
+            newElement.setAttribute('src', 'Assets/EmptyCard.png');
+            newElement.setAttribute('onClick', 'drawPileClick()');
+            container.innerHTML = '';
+            container.appendChild(newElement);
+            localStorage.setItem('drawPileFace', 'Assets/EmptyCard.png');
+            localStorage.setItem('drawPilePoints', 0);
+            checkPoints(); 
+        }
+        else if(localStorage.getItem('discardPileHeight') > 0 && localStorage.getItem('pregameFlips') >= 2){
+            localStorage.setItem('discardPilePickUp', 'Y');
+        }
     }
 }
 
@@ -145,7 +163,9 @@ function emptyCardClick(field, face, points, functionName){
     container.appendChild(newElement);
     localStorage.setItem(face, randomCard.face);
     localStorage.setItem(points, randomCard.points);
-    checkPoints();
+    if (field != '.drawPile' && localStorage.getItem('turns') > 0){
+        checkPoints();
+    }
 
 }
 function drawPilePlace(field, face, points, functionName){
@@ -216,8 +236,38 @@ function discardPilePlace(field, face, points, functionName){
 }
 
 function checkPoints(){
-    const container = document.querySelector('.score');
-    const newElement = document.createElement('p');
+    let container;
+    let newElement;
+    let flag = true;
+    for (let i = 1; i<=6; i++){
+        if (localStorage.getItem('card' + i + 'Face') == 'Assets/EmptyCard.png'){
+            flag = false;
+        }
+    }
+    if (localStorage.getItem('turns') <= 1 || flag){
+        container = document.querySelector('.instructions');
+        newElement = document.createElement('p');
+        newElement.textContent = 'GAME OVER'
+        container.innerHTML = '';
+        container.appendChild(newElement);
+        for (let i = 1; i<=6; i++){
+            if (localStorage.getItem('card' + i + 'Face') == 'Assets/EmptyCard.png'){
+                emptyCardClick('.cardSpace' + i, 'card' + i + 'Face', 'card' + i + 'Points', 'card' + i + 'Click()');
+            }
+        }
+        localStorage.setItem('gameOver', 'Y');
+    }
+    else if (localStorage.getItem('pregameFlips') >= 2){
+        localStorage.setItem('turns', parseInt(localStorage.getItem('turns'))-1);
+        container = document.querySelector('.instructions');
+        newElement = document.createElement('p');
+        newElement.textContent = ('Turns Remaining: ' + localStorage.getItem('turns'));
+        container.innerHTML = '';
+        container.appendChild(newElement);
+    }
+
+    container = document.querySelector('.score');
+    newElement = document.createElement('p');
     let pointSum = 0;
     if (localStorage.getItem('card1Face') != localStorage.getItem('card4Face') && localStorage.getItem('card1Face') != 'Assets/red_joker.png' && localStorage.getItem('card4Face') != 'Assets/red_joker.png'){
         pointSum += parseInt(localStorage.getItem('card1Points')) + parseInt(localStorage.getItem('card4Points'));
