@@ -58,6 +58,11 @@ body{
     width: 100%;
     height: 85vh;
 }
+.instructions{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .cardSpace{
     width: 60%;
     height: 100%;
@@ -113,6 +118,17 @@ body{
     padding: 10px 10px 20px 10px;
     align-items: center;
     color:white;
+}
+.instructions a{
+    text-align: center;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    border: none;
+    padding: 3px;
+    font-size: 13px;
+    margin-top: 5px;
+    text-decoration: none;
 }
 .helperSlide{
     background-color: black;
